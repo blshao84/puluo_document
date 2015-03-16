@@ -1,0 +1,21 @@
+1. Add section 'Dummy Result' to document the way to call dummy API that returns hard-coded json results.
+
+2. Error message format change. 
+	1) id becomes numeric 
+	2) add error_type to describe on the API type level what's wrong.
+	3) message now contains details information about the error.
+
+3. Registration API requires a 'auth_code' argument
+
+4. Add 'last_login' field to Login API result.
+
+5. Add a Login Status API
+
+6. 'thumbnail' in Event Detail API result changes from a String to an array of Strings (an event might have more than one thumbnail)
+
+7. 'thumbnail' in Event Search API changes from a String to an array of Strings
+
+8. Add 'Send Registration Verification Code' API
+
+9. Change 'email' field in SMS result to 'mobile'.
+

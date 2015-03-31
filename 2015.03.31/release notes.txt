@@ -1,0 +1,10 @@
+1. Change all Get requests to Post because we are using token based authentication and we always need to pass a token to authenticated resources
+2. Fix typo in /users/setting/update parameters. 
+    *   Change 'allow_searchedl' to 'allow_searched'
+3. Change List Friends API. 
+    *   It only supports getting the requester's own friends list. 
+4. Event Memory API changes. 
+    *   It accepts an event uuid on its url.
+5. Event Search API changes. 
+    *   event_date type changes to unix timestamp
+    *   user_lattitude and user_longitude use type double (it requires further discussion).

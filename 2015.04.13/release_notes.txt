@@ -1,0 +1,9 @@
+1. Fix logout API example which misses 'token' from input
+2. Fix status API curl example
+3. Change User Profile API name: from /users/{mobile_or_uuid} to /user/profile/{mobile_or_uuid}
+4. Fix User Search API curl example
+5. Change User Setting API: from /users/privacy/{mobile_or_uuid} to /users/privacy. The new API only allows to retrive user setting for current login user.
+6. Change Request Friend API http type from Put to Post
+7. Rename Delete Friend API from /users/friends/delete to /users/friends/request/delete
+8. Rename Deny Friend API from /users/friends/deny to /users/friends/request/deny
+9. Add event_uuid to Event Search API result. This API returns a sequence of events and the new result format contains event_uuid for each returned event. 
